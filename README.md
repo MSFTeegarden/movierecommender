@@ -24,13 +24,13 @@ The _Movie Recommender_ application (e.g. `app.py`) expects that the Redis insta
 This repo is a work in progress. If you have questions, please feel free to email azurecachepm@microsoft.com
 
 ## License Details
-`wiki_movie_plots_1970to2017.csv` (c) by JustinR
+`wiki_movie_plots_1970to2017.csv` and `wiki_movie_plots_deduped.csv` (c) by JustinR
 
 Original data source: [Wikipedia Movie Plots - Kaggle](https://www.kaggle.com/datasets/jrobischon/wikipedia-movie-plots)
 
-Data was modified to filter for only entries from 1970 or later, and take only films from America, Australia, Canada, and Britain. 
+Data in `wiki_movie_plots_1970to2017.csv`was modified to filter for only entries from 1970 or later, and take only films from America, Australia, Canada, and Britain. 
 
-`wiki_movie_plots_1970to2017.csv` is licensed under a
+`wiki_movie_plots_1970to2017.csv` and `wiki_movie_plots_deduped.csv` are licensed under a
 Creative Commons Attribution-ShareAlike 4.0 International License.
 
 You should have received a copy of the license along with this
