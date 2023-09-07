@@ -4,7 +4,7 @@
 This repo contains an example demonstrated at [Azure Python Day 2023](https://learn.microsoft.com/en-us/events/learn-events/azuredevelopers-pythonday/) in the **How to build a practical AI app with Python, Redis, and OpenAI** session. 
 
 `app.py` contains the main Streamlit application 
-`movierecommender.ipynb` is a juptyer notebook walking through the process of ingesting the data into pandas, filtering it, generating embeddings, loading into Redis, and performing search queries. You might want to start here :)
+`langchain.ipynb` is a juptyer notebook walking through the process of ingesting the data into pandas, filtering it, generating embeddings, loading into Redis, and performing search queries. You might want to start here :)
 
 ## Prerequsites
 - An Azure OpenAI Service instance, with the text-embedding-ada-002 (version 2) model deployed
