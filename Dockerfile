@@ -4,11 +4,11 @@ COPY requirements.txt ./requirements.txt
 RUN pip install -r requirements.txt
 EXPOSE 8501
 COPY . .
-ENV OPENAI_ENDPOINT=https://ktopenaidemotest.openai.azure.com/
-ENV OPENAI_KEY=5b6a98a19bb04816880cebb1759d4527
-ENV DEPLOYMENT_NAME=text-embedding-ada-002
-ENV MODEL_NAME=text-embedding-ada-002
-ENV REDIS_ENDPOINT=redisopenaidemo.southcentralus.redisenterprise.cache.azure.net:10000
-ENV REDIS_PASSWORD=UfDkt9EAtFpjogeeT3GDfCluBr9GrkfQuELHvjE8Gb4=
+ENV OPENAI_ENDPOINT=https:<your-endpoint>
+ENV OPENAI_KEY=<your-azure-openai-key>
+ENV DEPLOYMENT_NAME=<your-deployment-name>
+ENV MODEL_NAME=<your-model-name>
+ENV REDIS_ENDPOINT=<your-redis-endpoint>
+ENV REDIS_PASSWORD=<your-redis-password>
 ENTRYPOINT ["streamlit", "run"]
 CMD ["app.py"]
