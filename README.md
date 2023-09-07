@@ -1,4 +1,8 @@
-# movierecommender
+# Movie Recommender App
+This repo contains samples demonstrated at Azure Python Day 2023. 
+
+## Overview
+
 
 ## License Details
 `wiki_movie_plots_1970to2017.csv` (c) by JustinR
