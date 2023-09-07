@@ -17,6 +17,9 @@ This repo contains an example demonstrated at [Azure Python Day 2023](https://le
 
 The _Movie Recommender_ application (e.g. `app.py`) expects that the Redis instance already has embeddings loaded and a search index established. You may want to run the jupyter notebook first so this is set up.
 
+## Deploying to Azure
+[az-containerapp-up](https://learn.microsoft.com/en-us/cli/azure/containerapp?view=azure-cli-latest#az-containerapp-up) is an extremely convenient way to deploy to an Azure Container App instance. All you need is the dockerfile and an Azure subscription!
+
 ## License Details
 `wiki_movie_plots_1970to2017.csv` (c) by JustinR
 
