@@ -1,8 +1,21 @@
 # Movie Recommender App
-This repo contains samples demonstrated at Azure Python Day 2023. 
 
 ## Overview
+This repo contains an example demonstrated at [Azure Python Day 2023](https://learn.microsoft.com/en-us/events/learn-events/azuredevelopers-pythonday/) in the **How to build a practical AI app with Python, Redis, and OpenAI** session. 
 
+`app.py` contains the main Streamlit application 
+`movierecommender.ipynb` is a juptyer notebook walking through the process of ingesting the data into pandas, filtering it, generating embeddings, loading into Redis, and performing search queries. You might want to start here :)
+
+## Prerequsites
+- An Azure OpenAI Service instance, with the text-embedding-ada-002 (version 2) model deployed
+  - You may need to apply for access if access is still being restricted. 
+- An Azure Cache for Redis instance
+  - You must use an Enterprise tier instance (e.g. E5, E10, etc.)
+  - You must provision the instance using the `Enterprise` cluster policy and with the `RediSearch` module installed.
+- If running locally, you must configure the environment variables for the OpenAI key, models, and endpoints, plus the Redis key and endpoint.
+- If deploying through a container, you must configure the environement variables in the Dockerfile.
+
+The _Movie Recommender_ application (e.g. `app.py`) expects that the Redis instance already has embeddings loaded and a search index established. You may want to run the jupyter notebook first so this is set up.
 
 ## License Details
 `wiki_movie_plots_1970to2017.csv` (c) by JustinR
