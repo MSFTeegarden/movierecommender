@@ -20,6 +20,9 @@ The _Movie Recommender_ application (e.g. `app.py`) expects that the Redis insta
 ## Deploying to Azure
 [az-containerapp-up](https://learn.microsoft.com/en-us/cli/azure/containerapp?view=azure-cli-latest#az-containerapp-up) is an extremely convenient way to deploy to an Azure Container App instance. All you need is the dockerfile and an Azure subscription!
 
+## Questions
+This repo is a work in progress. If you have questions, please feel free to email azurecachepm@microsoft.com
+
 ## License Details
 `wiki_movie_plots_1970to2017.csv` (c) by JustinR
 
